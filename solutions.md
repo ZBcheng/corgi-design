@@ -8,7 +8,7 @@ This document maps each problem statement from `questions.txt` to the comprehens
 
 ## Table of Contents
 
-1. [Question 1: End-to-End ML Operations Pipeline](#question-1-end-to-end-ml-operations-pipeline)
+1. [Question 1: API ingestion + ETL + optimized storage + real-time inference](#question-1-api-ingestion--etl--optimized-storage--real-time-inference)
 2. [Question 2: Safe Model Evaluation Without Fraud Exposure](#question-2-safe-model-evaluation-without-fraud-exposure)
 3. [Question 3: Non-API Provider Integration with External Decision Engine](#question-3-non-api-provider-integration-with-external-decision-engine)
 4. [Question 4: High-Performance Inference with 3,000+ Variables](#question-4-high-performance-inference-with-3000-variables)
