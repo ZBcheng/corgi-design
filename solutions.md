@@ -67,7 +67,7 @@ sequenceDiagram
     Processing->>Storage: Kafka → OLAP (all features) + Redis (selected features)
     Ingestion-->>Provider: 200 OK
 
-    Note over Storage,MLPipeline: Phase 2: Daily Model Training (2AM UTC)
+    Note over Storage,MLPipeline: Phase 2: Daily Model Training
     
     MLPipeline->>Storage: Query OLAP (90 days historical data)
     MLPipeline->>MLPipeline: Spark: Feature Engineering
@@ -136,7 +136,7 @@ sequenceDiagram
 
 #### 4. Continuous Model Training
 
-**Daily Automated Pipeline** (2AM UTC):
+**Daily Automated Pipeline**:
 
 1. Extract 90-day historical data from OLAP Warehouse
 2. Train XGBoost ensemble models with GPU acceleration
