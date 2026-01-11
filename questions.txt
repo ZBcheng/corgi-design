@@ -1,0 +1,22 @@
+1. How would you design a system to ingest data from a payment processor API, run ETL,
+and store in a database for ML model development on a continuous basis (ideally
+optimized for data storage and runtime) and then deliver the model for near real time
+inference? You can select any payment processor. Please be as detailed and specific
+as possible.
+
+2. One of the classical problems in payments data science is how to measure the
+effectiveness of a new fraud model, without exposing your business to fraud by
+substituting a model that performs well in training but fails in production. A potential
+solution is to use a small holdout sample, which is not subject to any fraud prevention
+algorithms or rules, and use that sample to A/B test new models vs existing models.
+How would you design this system? What are the business considerations that you
+need to take into account? Do you have ideas for other less risky solutions?
+
+3. We’re working with a new payment provider, and they don’t have an API we can use
+to ingest data. What kind of system/process could you come up with to receive their
+data, process it and then deliver the model for inference on their architecture?
+Assume they already have a decision engine on their side that works well.
+
+4. What’s the best way to take a 3,000 variables and deep learning model (GBDT,
+XgBoost, Random Forest) for payment fraud to run inference on an incoming
+payments object with near-real-time inference? (hint: think about high frequency trading)
