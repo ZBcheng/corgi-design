@@ -71,8 +71,9 @@ sequenceDiagram
     
     MLPipeline->>Storage: Query OLAP (90 days historical data)
     MLPipeline->>MLPipeline: Spark: Feature Engineering
-    MLPipeline->>MLPipeline: XGBoost: Model Training + Validation
+    MLPipeline->>MLPipeline: XGBoost: Model Training
     MLPipeline->>MLPipeline: ONNX: Model Optimization
+    MLPipeline->>MLPipeline: Offline Data Validation
     MLPipeline->>Storage: Register model to MLflow
 
     Note over Storage,Inference: Phase 3: Real-time Inference (< 50ms)
